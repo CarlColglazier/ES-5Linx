@@ -1,14 +1,2 @@
-[package]
-name = "es5"
-version = "0.1.0"
-authors = ["Carl Colglazier <carl@carlcolglazier.com>"]
-edition = "2018"
-
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
-
-[dependencies]
-vst = "0.2.0"
-
-[lib]
-name = "es5"
-crate-type = ["cdylib"]
+[workspace]
+members = ["vst", "jack"]
