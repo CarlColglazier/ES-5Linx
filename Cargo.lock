@@ -28,6 +28,7 @@ checksum = "4785bdd1c96b2a846b2bd7cc02e86b6b3dbf14e7e53446c4f54c92a361040822"
 name = "es5"
 version = "0.1.0"
 dependencies = [
+ "util",
  "vst",
 ]
 
@@ -36,6 +37,7 @@ name = "jack"
 version = "0.1.0"
 dependencies = [
  "jack 0.6.2",
+ "util",
 ]
 
 [[package]]
@@ -121,6 +123,10 @@ checksum = "c62be47e61d1842b9170f0fdeec8eba98e60e90e5446449a0545e5152acd7096"
 dependencies = [
  "autocfg",
 ]
+
+[[package]]
+name = "util"
+version = "0.1.0"
 
 [[package]]
 name = "vst"

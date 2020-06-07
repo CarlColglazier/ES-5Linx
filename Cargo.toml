@@ -1,2 +1,2 @@
 [workspace]
-members = ["vst", "jack"]
+members = ["vst", "jack", "util"]
