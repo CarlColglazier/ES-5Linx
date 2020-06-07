@@ -43,12 +43,9 @@ fn main() {
 
 		let active_client = client.activate_async(Notifications, process).unwrap();
 
-		// Wait for user input to quit
-    println!("Press enter/return to quit...");
-    let mut user_input = String::new();
-    io::stdin().read_line(&mut user_input).ok();
+		loop {}
 
-    active_client.deactivate().unwrap();
+		//active_client.deactivate().unwrap();
 }
 
 
