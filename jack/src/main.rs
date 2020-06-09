@@ -1,6 +1,6 @@
 extern crate jack;
 
-use std::io;
+use std::{thread, time};
 use util::bits_to_float;
 
 fn main() {
@@ -41,9 +41,11 @@ fn main() {
 		};
 		let process = jack::ClosureProcessHandler::new(process_callback);
 
-		let active_client = client.activate_async(Notifications, process).unwrap();
+		let _active_client = client.activate_async(Notifications, process).unwrap();
 
-		loop {}
+		loop {
+				thread::sleep(time::Duration::from_millis(10));
+		}
 
 		//active_client.deactivate().unwrap();
 }
