@@ -1,6 +1,6 @@
 extern crate jack;
 
-use std::{thread, time};
+use std::thread;
 use util::bits_to_float;
 
 fn main() {
@@ -44,7 +44,7 @@ fn main() {
 		let _active_client = client.activate_async(Notifications, process).unwrap();
 
 		loop {
-				thread::sleep(time::Duration::from_millis(10));
+				thread::yield_now();
 		}
 
 		//active_client.deactivate().unwrap();
